@@ -166,6 +166,8 @@ body{
     margin: 0 auto;
 }
 
+
+
 @media (max-width:900px){
     .hero--content--intro{
         flex-direction: column;
@@ -246,3 +248,8 @@ body{
   .topnav .icon {
     display: none;
   }
+
+
+
+
+

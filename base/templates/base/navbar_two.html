@@ -2,7 +2,7 @@
     <a class="nav-link" href="{% url 'home' %}">
         Home
     </a>
-    <a class="nav-link" href="{% url 'home' %}">
+    {% comment %} <a class="nav-link" href="{% url 'home' %}">
         Blogs
     </a>
 
@@ -12,21 +12,21 @@
 
     <a class="nav-link" href="#services">
         Our Services
-    </a>
+    </a> {% endcomment %}
 
 
     {% comment %} <div class="topnav-right"> {% endcomment %}
            
-        <a class="nav-link" href="#contact">
+        {% comment %} <a class="nav-link" href="#contact">
             Contact
-        </a>
+        </a> {% endcomment %}
 
         <a class="nav-link" href="https://www.facebook.com/emmanuel.young30" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         
 
-        <a class="nav-link" href="#contact">
-            <i class="fa-solid fa-envelope"></i><span>emmanuel.youngg30@gmail.com</span>
-        </a>
+        <a class="nav-link" href="mailto:emmanuel.youngg30@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            </a>
     {% comment %} </div> {% endcomment %}
     
     

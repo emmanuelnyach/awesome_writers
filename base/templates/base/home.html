@@ -3,6 +3,8 @@
 {% block content %}
 
 
+{% include 'base/navbar.html' %}
+
 <section class="hero">
     <div class="hero--content">
         <div class="hero--content--intro">
@@ -109,13 +111,19 @@
 
 </section> {% endcomment %}
 
-<section class="section--1">
+<section class="container section--2">
+
+    <div id="contact" >
     
-    <div id="contact" class="container">
-        <h3>Contact Us</h3>
+    <h3>Contact Us</h3>
+    <div class="container">
+        
         <a href="https://www.facebook.com/emmanuel.young30" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <br>
-        <i class="fa-solid fa-envelope"></i><span>emmanuel.youngg30@gmail.com</span>
+        <a href="mailto:emmanuel.youngg30@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:emmanuel.youngg30@gmail.com">emmanuel.youngg30@gmail.com</a>
+
+        <br>
         
         <form class="contact--form" method="POST">
             {% csrf_token %}
@@ -131,7 +139,10 @@
 
             <input class="btn btn-primary" type="submit" value="submit">
         </form>
+
+        
     </div>
+</div>
 </section>
 
 {% endblock content %}
