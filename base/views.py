@@ -29,6 +29,7 @@ def homePage(request):
 
 def projectPage(request, pk):
     project = Project.objects.get(id=pk)
+    print(project.thumbnail)
     count = project.comment_set.count()
 
     comments = project.comment_set.all().order_by('-created')

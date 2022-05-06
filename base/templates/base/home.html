@@ -28,7 +28,12 @@
         {% for project in projects %}
         <div class="project--column">
             <a href="{% url 'project' project.id %}">
+                
+                
                 <img class="project--thumbnail" src="{{project.thumbnail.url}}">
+                
+                
+                
             </a>
             <div class="project--body">
                 <h5>{{project.title}}</h5>

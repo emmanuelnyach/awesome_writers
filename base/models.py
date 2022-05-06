@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 import uuid
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -24,7 +25,7 @@ class Question(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=200)
-    thumbnail = models.ImageField(null=True)
+    thumbnail = models.ImageField(null=True, blank=True, default=('images/blog_image.webp'))
     body = RichTextUploadingField()
     slug = models.SlugField(null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
