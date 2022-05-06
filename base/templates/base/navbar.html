@@ -1,0 +1,52 @@
+<section class="navigation-bar">
+    <a class="nav-link" href="{% url 'home' %}">
+        Home
+    </a>
+    <a class="nav-link" href="{% url 'home' %}">
+        Blogs
+    </a>
+
+    <a class="nav-link" href="#about">
+        About Us
+    </a>
+
+    <a class="nav-link" href="#services">
+        Our Services
+    </a>
+
+
+    <a class="nav-link" href="#contact">
+        Contact
+    </a>
+
+    <a href="https://www.facebook.com/emmanuel.young30" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    
+
+    <a class="nav-link" href="#contact">
+        <i class="fa-solid fa-envelope"></i><span>emmanuel.youngg30@gmail.com</span>
+    </a>
+    
+    
+
+    {% comment %} <a class="nav-link" href="{% url 'chart' %}">
+        Vote
+    </a> {% endcomment %}
+
+    {% comment %} <a class="btn btn-light btn-sm" href="{% url 'donation' %}">
+        BUY ME A COFFEE
+    </a> {% endcomment %}
+
+    {% if request.user.is_authenticated %}
+    <a class="nav-link" href="{% url 'inbox' %}">
+        Inbox
+    </a>
+    <a class="nav-link" href="{% url 'add-project' %}">
+        Add Blog
+    </a>
+    <a class="nav-link" href="{% url 'add-skill' %}">
+        Add Service
+    </a>
+
+
+    {% endif %}
+</section>
