@@ -7,7 +7,7 @@
     <div class="hero--content">
         <div class="hero--content--intro">
             <img id="profile_pic" src="{% static 'images/seo.jpg' %}">
-            <h1 class="intro--name">Awesome <br> Writers</h1>
+            <h1 class="intro--name">Young <br> Writers</h1>
         </div>
 
         <div class="hero--content--subheadline">
@@ -20,7 +20,7 @@
 </section>
 
 <section class="container section--2">
-
+    <div id="blog">
     <h3>Our Blogs</h3>
     <h5>Take a look at some of our blog projects!</h5>
     <div class="projects--wrapper">
@@ -37,6 +37,7 @@
         {% empty %}
 
         <h3>There are no projects in the database...</h3 {% endfor %} </div>
+    </div>
 
 
         <div id="about" class="about--wrapper">
@@ -69,7 +70,7 @@
         {% endfor %}
 
 
-        <h4>Other Skills</h4>
+        <h4>More Services</h4>
         <div class="other--skills--wrapper">
             {% for skill in skills %}
             <div class="skill--tag">
@@ -104,6 +105,7 @@
 </section> {% endcomment %}
 
 <section class="section--1">
+    
     <div id="contact" class="container">
         <h3>Contact Us</h3>
         <a href="https://www.facebook.com/emmanuel.young30" target="_blank"><i class="fa-brands fa-facebook"></i></a>
