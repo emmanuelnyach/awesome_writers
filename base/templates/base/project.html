@@ -18,7 +18,7 @@
     <div class="project-container">
 
 
-        <img class="project--image" src="static/image{{project.thumbnail.url}}">
+        <img class="project--image" src="{{project.thumbnail.url}}">
 
         <h1>{{project.title}}</h1>
         {% if request.user.is_authenticated %}
