@@ -10,8 +10,17 @@
     <meta name='description' content='Welcome to youngwriters.herokuapp.com! We are a full-service content writing company that provides SEO friendly, highly readable articles for businesses and individuals alike. Our services include blog posts, press releases, product descriptions, HARO submissions & Ad copies. Get in touch today!'>
     <meta name='keywords' content='young writers, young writers content writing, content writing, young writers SEO, SEO, young writers blog posts, blog posts, young writers press releases, press releases, young writers product descriptions,product description, product review, articles writing, online content writers, online article writing, online article content writing, young writers HARO submissions, HARO, young writers Ad copies, Ad copies'>
     <meta name='author' content='young writers'>
+   
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-        
+    <link rel='canonical' href='{{request.path}}'/>
+    <link rel='home' href='{% url 'home' %}'/>
+
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images/favicon.jpg' %}"/>
+    <link rel='icon' type='image/jpg' href="{% static 'images/favicon.jpg' %}">
+    <link rel='apple-touch-icon' type='image/jpg' href="{% static 'images/favicon.jpg' %}">
+
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
